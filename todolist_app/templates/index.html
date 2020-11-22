@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+ {% block title %}
+        <title>Welcome To Index -TaskMate </title>
+ {% endblock title %}
+
+   {%block content%}
+         <div class="container">
+              <div class="row mt-5">
+                   <div class="col-lg-4"> 
+                       <img src="{% static 'images/img1.jpg' %}"  alt="Notes" class="rounded-lg shadow-lg" width="350" height="200">
+                   </div>
+                   <div class="col-lg-4"> 
+                       <img src="{% static 'images/img2.png' %}" alt="Notes" class="rounded-lg shadow-lg" width="350" height="200">
+                   </div>
+                   <div class="col-lg-4"> 
+                       <img src="{% static 'images/img2.png' %}"  alt="Notes" class="rounded-lg shadow-lg" width="360" height="200">
+                   </div>
+                  <div class= "row mt-2">
+                      <div class="col-md-4 offset-md-6">
+                         <center><p class="h1 text-primary"> She looked at her notes on her micro.</p></center>
+                         <center><p class="h2 mt-3">He pried the notes from her hand.</p></center>
+                         <center><p class="h3">You should take notes in case we forget some detail.</p></center>
+                         <center><a href="{% url 'todolist' %}"><button type="button" class="btn btn-primary btn-lg mt-3 shadow-lg">Let's Get Started</button></a></center>
+                      </div>
+                  </div>                 
+                </div>
+              </div>
+         </div>    
+   {%endblock content%}
